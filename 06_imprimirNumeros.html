@@ -6,10 +6,25 @@
     */
 
     //ENTRADA
-
+    const numeroInicial = Number(prompt("informe o numero inicial."));
+    const numeroFinal = Number(prompt("informe o numero limite."));
     
     //PROCESSAMENTO
-
+    if (numeroInicial <= numeroFinal) {
+        let numerosPares = []
+        let numerosImpares = []
+        for(let i = numerosInicial +1; i < numeroFinal; i++)
+        if (i % 2 = 0) {
+            numerosPares.push(i)
+        }
+        else {
+            numerosImpares.push(i)
+        }
+        document.write("numeros Pares são: " + numerosPares.join(" - ")<br>);
+        document.write("numeros Impares são: " + numerosImpares.join(" - "));
+    } else {
+        alert("o numero inicial deve ser menor que o numero final")
+    }
     
     //SAÍDA
 

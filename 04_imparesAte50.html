@@ -6,10 +6,16 @@
     */
 
     //ENTRADA
-
+     const impares = [];
 
     //PROCESSAMENTO
+     for (let i = 0; i <= 50; i++) {
+        if (i % 2 == 1) {
+        impares.push(i)
+    }
+     }
 
+     document.write("os numeros impares são: " + impares.join(" - "));
 
     //SAÍDA
 
